@@ -9,7 +9,7 @@
 import Foundation
 
 struct RCApp: Codable {
-    let v365: RCAppConfig
+    let agsense: RCAppConfig
 }
 
 struct RCAppConfig: Codable {
