@@ -30,7 +30,7 @@ final class FirebaseRemoteConfigService: NSObject {
                 let value = RemoteConfig.remoteConfig().configValue(forKey: ValueKey.app_forceupdate_json.rawValue)
 
                 do {
-                    let appInfo = try JSONDecoder().decode(RCApp.self, from: value.dataValue).v365
+                    let appInfo = try JSONDecoder().decode(RCApp.self, from: value.dataValue).agsense
                     completionHandler(.success(appInfo))
                 } catch {
                     print("Failed to decode JSON")
